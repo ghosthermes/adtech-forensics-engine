@@ -1,14 +1,23 @@
 import json
-
-# Expanded tracker list including common privacy-violating domains
-trackers = ['facebook', 'google-analytics', 'doubleclick', 'tiktok', 'onetrust', 'criteo', 'adroll', 'demdex']
-# Parameters that usually indicate PII or persistent tracking
-pii_indicators = ['em', 'email', 'ph', 'fn', 'ln', 'uid', 'fbp', 'fbc', 'guid']
+from urllib.parse import urlparse
 
 with open('evidence.har', 'r') as f:
     log = json.load(f)
 
-print(f"{'TRACKER':<15} | {'PII FOUND':<10} | {'URL PATH'}")
+found_domains = set()
+for entry in log['log']['entries']:
+    domain = urlparse(entry['request']['url']).netloc
+    found_domains.add(domain)
+
+print("TOP 20 DOMAINS CAPTURED:")
+for d in sorted(list(found_domains))[:20]:
+    print(f" - {d}")
+
+# Expanded whitelist for litigation targets
+trackers = ['facebook', 'google', 'doubleclick', 'tiktok', 'onetrust', 'criteo', 'adroll', 'demdex', 'omtrdc', 'adobe', 'marketing', 'pixel']
+pii_indicators = ['em', 'email', 'ph', 'fn', 'ln', 'uid', 'fbp', 'fbc', 'guid', 'mid']
+
+print(f"\n{'TRACKER':<15} | {'PII FOUND':<10} | {'URL PATH'}")
 print("-" * 80)
 
 for entry in log['log']['entries']:
