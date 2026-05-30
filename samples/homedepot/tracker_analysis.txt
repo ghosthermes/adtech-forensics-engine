@@ -1,0 +1,60 @@
+TRACKER         | PII TYPE     | DATA/SIGNAL
+--------------------------------------------------------------------------------
+adobe           | configid     | uuoNݦmkW=kF
+adobe           | requestid    | o;}|_mO}y
+facebook        | id           | nwm9}6
+facebook        | ud[external_id] | [NESTED JSON DATA]
+google          | id           | P
+facebook        | id           | [NESTED JSON DATA]
+facebook        | cd[order_id] | ~<~|tN8׏;y}
+google          | id           | G-9H2R4ZXG4J
+google          | id           | AW-985322823
+google          | id           | DC-3518820
+google          | tid          | G-9H2R4ZXG4J
+google          | cid          | [NESTED JSON DATA]
+google          | sid          | [NESTED JSON DATA]
+doubleclick     | tid          | G-9H2R4ZXG4J
+doubleclick     | cid          | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | userid       | [NESTED JSON DATA]
+google          | userid       | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | userid       | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | userid       | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | em           | ^D`Ӗl!}kp۸y
+google          | ecsid        | 953893053.1780159747
+google          | userid       | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | userid       | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | uid          | [NESTED JSON DATA]
+google          | tids         | o|}m[]<}
+google          | tid          | AW-985322823
+google          | auid         | [NESTED JSON DATA]
+google          | uid          | [NESTED JSON DATA]
+google          | tids         | AW-985322823
+google          | tid          | AW-985322823
+google          | auid         | [NESTED JSON DATA]
+google          | uid          | [NESTED JSON DATA]
+google          | tids         | AW-10893376479
+google          | tid          | AW-10893376479
+google          | auid         | [NESTED JSON DATA]
+google          | tids         | DC-3518820
+google          | tid          | DC-3518820
+google          | auid         | [NESTED JSON DATA]
+google          | tids         | DC-3518820
+google          | tid          | DC-3518820
+google          | userid       | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | cid          | [NESTED JSON DATA]
+google          | userid       | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | cid          | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | userid       | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | userid       | [NESTED JSON DATA]
+google          | cid          | CAQS4QEABaugfWcXbR81bjKU4wvhIk_6oTPydUYo
