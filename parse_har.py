@@ -1,18 +1,22 @@
 import json
 
-tracker_domains = ['facebook.com', 'google-analytics.com', 'doubleclick.net', 'tiktok.com', 'onetrust.com']
+# Expanded tracker list including common privacy-violating domains
+trackers = ['facebook', 'google-analytics', 'doubleclick', 'tiktok', 'onetrust', 'criteo', 'adroll', 'demdex']
+# Parameters that usually indicate PII or persistent tracking
+pii_indicators = ['em', 'email', 'ph', 'fn', 'ln', 'uid', 'fbp', 'fbc', 'guid']
 
 with open('evidence.har', 'r') as f:
-    data = json.load(f)
+    log = json.load(f)
 
-print(f"{'DOMAIN':<25} | {'URL PATH':<40} | {'PARAMS'}")
-print("-" * 100)
+print(f"{'TRACKER':<15} | {'PII FOUND':<10} | {'URL PATH'}")
+print("-" * 80)
 
-for entry in data['log']['entries']:
+for entry in log['log']['entries']:
     url = entry['request']['url']
-    if any(domain in url for domain in tracker_domains):
-        # Extract query parameters
+    if any(t in url for t in trackers):
         params = [p['name'] for p in entry['request'].get('queryString', [])]
-        clean_url = url.split('?')[0][:40]
-        domain = next(d for d in tracker_domains if d in url)
-        print(f"{domain:<25} | {clean_url:<40} | {', '.join(params)}")
+        found_pii = [p for p in params if p in pii_indicators]
+        
+        tracker_name = next(t for t in trackers if t in url)
+        pii_signal = "YES" if found_pii else "no"
+        print(f"{tracker_name:<15} | {pii_signal:<10} | {url[:50]}...")
