@@ -13,13 +13,34 @@ async def run(target_url):
         )
         page = await context.new_page()
         
-        print(f"Executing forensic capture on: {target_url}")
+        print(f"Executing resilient forensic capture on: {target_url}")
         try:
-            await page.goto(target_url, wait_until="load", timeout=60000)
-            await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-            await asyncio.sleep(15) # Wait for pixel fire
+            # Drop the wait_until to 'domcontentloaded' to bypass ad bloat
+            await page.goto(target_url, wait_until="domcontentloaded", timeout=30000)
+        except Exception:
+            print("Page load taking too long, forcing execution sequence...")
+            
+        # Give JS frameworks 3 seconds to render the input fields
+        await asyncio.sleep(3)
+        
+        # AUTOMATED PROBE
+        try:
+            email_inputs = await page.locator("input[type='email'], input[name*='email' i], input[id*='email' i]").all()
+            if email_inputs:
+                print(f"Found {len(email_inputs)} email fields. Injecting burner probe...")
+                for input_field in email_inputs:
+                    try:
+                        await input_field.fill("xemnasvii@gmail.com")
+                        await page.keyboard.press("Tab") # Trigger tracker listeners
+                    except: pass
+            else:
+                print("No email fields found in the DOM.")
         except Exception as e:
-            print(f"Error during capture: {e}")
+            print(f"Probe injection failed: {e}")
+            
+        await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        print("Waiting 15 seconds for tracking pixels to exfiltrate data...")
+        await asyncio.sleep(15) 
             
         await context.close()
         await browser.close()
