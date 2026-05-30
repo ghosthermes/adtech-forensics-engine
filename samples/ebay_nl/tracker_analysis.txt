@@ -1,0 +1,94 @@
+TRACKER         | PII TYPE     | DATA/SIGNAL
+--------------------------------------------------------------------------------
+google          | id           | DC-13341218
+google          | id           | mtN}u
+google          | id           | mtӞz<
+google          | auid         | [NESTED JSON DATA]
+google          | gdid         | dYmQxMT
+google          | tids         | DC-13341218
+google          | tid          | DC-13341218
+facebook        | id           | t}۞:ӝ
+facebook        | cd[pid]      | 4624852
+facebook        | cud[external_id] | 
+facebook        | ncud[external_id] | 
+facebook        | ud[external_id] | \x״kֺ}
+facebook        | aud[external_id] | \x״kֺ}
+facebook        | fbp          | [NESTED JSON DATA]
+facebook        | eid          | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | tids         | mtӞz<
+google          | tid          | mtӞz<
+google          | auid         | [NESTED JSON DATA]
+google          | ep.guid      | \x״kֺ}
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | tids         | mtӞz<
+google          | tid          | mtӞz<
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | tids         | mtN}u
+google          | tid          | mtN}u
+google          | auid         | [NESTED JSON DATA]
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | tids         | AW-16653549404
+google          | tid          | AW-16653549404
+google          | auid         | [NESTED JSON DATA]
+google          | ep.guid      | \x״kֺ}
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | tids         | mtN}u
+google          | tid          | mtN}u
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | cid          | CAQS0wEABaugfbj9DMcoS0R7bAvCr_9Jx0c3nUaY
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | cid          | CAQS0wEABaugfZFMbgW1u8EDhCNWm11KXM0hbBCc
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | cid          | CAQS4QEABaugfcpThgYW0so9Y0aCieTN8lArySSc
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | cid          | CAQS4QEABaugfRse0QdvQ3LrafYKynWvu9Kc56Jf
+google          | did          | dYmQxMT
+google          | gdid         | dYmQxMT
+google          | auid         | [NESTED JSON DATA]
+google          | cid          | [NESTED JSON DATA]
